@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,300;0,800;1,600&display=swap');
+
+@tailwind base;
+
+@layer base {
+    body{
+        @apply w-full bg-light-gray
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply inline-block w-full h-full pl-3 text-green border-l-8 border-solid border-l-green
+}
+
+.active div{
+    @apply pl-5 rounded-l-full bg-light-gray
+}
+
+.active .link-icon path{
+    @apply fill-green 
+}
+
+.active .link-icon-stroke path{
+    @apply stroke-green
+}
